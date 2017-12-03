@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AllLog</string>
+    <string name="nome_cartao">Nome no cartão</string>
+    <string name="numero_cartao">Número do Cartão</string>
+    <string name="codigo_seg_cartao">Código de Segurança</string>
 </resources>
