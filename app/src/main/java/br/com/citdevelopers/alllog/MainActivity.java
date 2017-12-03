@@ -1,12 +1,12 @@
 package br.com.citdevelopers.alllog;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import br.com.citdevelopers.alllog.PagSeguro.ConfiguraCartao;
+import br.com.citdevelopers.alllog.PagSeguro.ConfiguraPagSeguro;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplication(), ConfiguraCartao.class);
+                Intent i = new Intent(getApplicationContext(), ConfiguraPagSeguro.class);
                 startActivity(i);
+                finish();
             }
         });
     }
