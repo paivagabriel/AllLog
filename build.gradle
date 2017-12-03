@@ -8,7 +8,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
-        
+
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -19,6 +19,19 @@ allprojects {
     repositories {
         google()
         jcenter()
+
+        // add em 03/12 -- thalles
+        mavenCentral()
+
+        maven {
+            url "https://jitpack.io"
+        }
+
+        maven {
+            url "https://github.com/pagseguro/pagseguro-android-sdk-checkout-in-app/raw/master/repositorio"
+        }
+
+        //
     }
 }
 

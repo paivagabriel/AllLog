@@ -4,17 +4,16 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toolbar;
 
 import br.com.citdevelopers.alllog.R;
 import br.com.uol.pslibs.checkout_in_app.PSCheckout;
 
-public class ConfiguraCartao extends AppCompatActivity {
+public class ConfiguraPagSeguro extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_configura_cartao);
+        setContentView(R.layout.activity_configura_pagseguro);
 
     }
 
