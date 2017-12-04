@@ -1,14 +1,21 @@
 package br.com.citdevelopers.alllog.PagSeguro;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import br.com.citdevelopers.alllog.R;
 import br.com.uol.pslibs.checkout_in_app.PSCheckout;
+import br.com.uol.pslibs.checkout_in_app.wallet.util.PSCheckoutConfig;
 
 public class ConfiguraPagSeguro extends AppCompatActivity {
+
+    //Inicialização a lib com parametros necessarios
+    private PSCheckoutConfig psCheckoutConfig = new PSCheckoutConfig();
+    private static final String SELLER_TOKEN = "EDA6C0FD171A46C093BB4E9FBB052148";
+    private static final String SELLER_EMAIL = "vendedor@teste.com";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,5 +60,7 @@ public class ConfiguraPagSeguro extends AppCompatActivity {
         super.onDestroy();
         PSCheckout.onDestroy(); //Controle Lib Activity Life Cycle
     }
+
+    ////////////////////////////////////////////////////////////////////
 
 }
