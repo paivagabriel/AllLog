@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\workspace\\Android\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "Z:\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\1e1284c52a60de4552f8b7c20acd3fe9\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\975b28594581b6475b866c25155143d9\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-26.0.1.aar\\565fff22c96f4babedda67e7256e2cfd\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-26.0.1.aar\\240237e1f34d329a0a0366711e0621a1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

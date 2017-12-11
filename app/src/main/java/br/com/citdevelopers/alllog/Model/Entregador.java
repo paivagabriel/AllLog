@@ -130,11 +130,11 @@ public class Entregador extends Usuario {
     @Override
     public void salvarDados() {
         DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
-        databaseReference.child("usuario/entregador").child(getId()).setValue(this);
+        databaseReference.child("usuarios/entregador").child(getId()).setValue(this);
     }
 
-    public static DatabaseReference getConfiguracaoUsuario() {
+    public static DatabaseReference getConfiguracaoEntregador() {
         DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
-        return databaseReference.child("usuario/entregador");
+        return databaseReference.child("usuarios/entregador");
     }
 }

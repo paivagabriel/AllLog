@@ -10,12 +10,16 @@
         </shape>
     </item>
 
-    <item >
-        <bitmap android:src="@drawable/sign_strip" android:gravity="center"  />
+    <item>
+        <bitmap
+            android:src="@drawable/sign_strip"
+            android:gravity="center" />
 
     </item>
 
-    <item android:top="30dp" android:bottom="270dp">
+    <item
+        android:top="30dp"
+        android:bottom="270dp">
         <shape android:shape="rectangle">
             <solid android:color="@android:color/black" />
         </shape>
@@ -23,15 +27,15 @@
 
 
     <item>
-        <inset android:insetTop="300dp" android:insetBottom="20dp" android:insetRight="20dp" >
-            <bitmap android:src="@drawable/ic_billing_visa_logo" android:gravity="bottom|right" />
+        <inset
+            android:insetTop="300dp"
+            android:insetBottom="20dp"
+            android:insetRight="20dp">
+            <bitmap
+                android:src="@drawable/ic_billing_visa_logo"
+                android:gravity="bottom|right" />
         </inset>
     </item>
-
-
-
-
-
 
 
 </layer-list>
