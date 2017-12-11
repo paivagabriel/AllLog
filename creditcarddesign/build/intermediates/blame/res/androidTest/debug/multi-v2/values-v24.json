@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\workspace\\Android\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "Z:\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\1e1284c52a60de4552f8b7c20acd3fe9\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\975b28594581b6475b866c25155143d9\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.1.aar\\f7d68b4121194fd0f49825a19c56575e\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.1.aar\\9080beb6b32de4d0428ad54fb41f6de9\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

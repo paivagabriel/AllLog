@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Theme.NoTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg"
+    tools:context="br.com.citdevelopers.alllog.Activity.EntregadorLoginActivity">
+
+    <Button
+        android:id="@+id/bt_conectar_login_entregador"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="false"
+        android:background="#000000"
+        android:text="Conectar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_login_content"
+        android:layout_width="300dp"
+        android:layout_height="520dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp">
+
+            <TextView
+                android:id="@+id/tv_nova_conta_entregador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_redef_senha"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="11dp"
+                android:gravity="center_horizontal"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="2"
+                android:text="Não possui conta?"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_redef_senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="2"
+                android:text="Redefinir senha"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/edit_login_senha_entregador"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignStart="@+id/edit_login_email_entregador"
+                android:layout_below="@+id/edit_login_email_entregador"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/borda_edit_text"
+                android:drawablePadding="5dp"
+                android:drawableTint="#99ffffff"
+                android:ems="16"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edit_login_email_entregador"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv_nome_login"
+                android:layout_marginTop="68dp"
+                android:background="@drawable/borda_edit_text"
+                android:drawablePadding="5dp"
+                android:drawableTint="#99ffffff"
+                android:ems="16"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/logo_login"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/tv_nome_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_login"
+                android:layout_centerHorizontal="true"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="2"
+                android:text="Entregador"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_digite_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_digite_senha"
+                android:layout_alignStart="@+id/edit_login_email_entregador"
+                android:layout_marginBottom="45dp"
+                android:text="Digite seu e-mail" />
+
+            <TextView
+                android:id="@+id/tv_digite_senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/edit_login_senha_entregador"
+                android:layout_below="@+id/edit_login_email_entregador"
+                android:layout_marginTop="16dp"
+                android:text="Digite sua senha" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
