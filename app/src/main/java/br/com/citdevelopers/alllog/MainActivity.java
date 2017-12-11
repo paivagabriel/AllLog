@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cooltechworks.creditcarddesign.CardEditActivity;
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-// teste commit gabriel 03
+
         textView = findViewById(R.id.helloworld);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(i, GET_NEW_CARD);
             }
         });
+        
+        //Testando commit Ivecio
+        Toast.makeText(this, "Teste de commit", Toast.LENGTH_SHORT).show();
 
     }
 }

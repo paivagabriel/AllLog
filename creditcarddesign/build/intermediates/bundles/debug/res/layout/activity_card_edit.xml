@@ -1,5 +1,4 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/parent"
     android:layout_width="match_parent"
@@ -14,7 +13,7 @@
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:elevation="0dp"/>
+        android:elevation="0dp" />
 
     <ScrollView
         android:id="@+id/scroll"
@@ -31,15 +30,14 @@
                 android:id="@+id/credit_card_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center" />
 
             <com.cooltechworks.creditcarddesign.views.HeightWrappingViewPager
                 android:id="@+id/card_field_container_pager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="120dp"
-                android:orientation="horizontal">
-            </com.cooltechworks.creditcarddesign.views.HeightWrappingViewPager>
+                android:orientation="horizontal"></com.cooltechworks.creditcarddesign.views.HeightWrappingViewPager>
 
         </LinearLayout>
     </ScrollView>
@@ -64,7 +62,7 @@
             android:padding="@dimen/padding_normal"
             android:text="@string/previous"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/text_size_small"/>
+            android:textSize="@dimen/text_size_small" />
 
         <TextView
             android:id="@+id/next"
@@ -76,7 +74,7 @@
             android:padding="@dimen/padding_normal"
             android:text="@string/next"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/text_size_small"/>
+            android:textSize="@dimen/text_size_small" />
     </LinearLayout>
 
     <Button
@@ -88,7 +86,7 @@
         android:layout_alignParentBottom="true"
         android:text="Pagar"
         android:textColor="#FFFFFF"
-        android:backgroundTint="@color/colorPrimary"/>
+        android:backgroundTint="@color/colorPrimary" />
 
 
 </RelativeLayout>
