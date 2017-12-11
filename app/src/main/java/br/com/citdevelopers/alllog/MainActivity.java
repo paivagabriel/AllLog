@@ -7,14 +7,11 @@ import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.cooltechworks.creditcarddesign.CardEditActivity;
-
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,7 +19,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import br.com.citdevelopers.alllog.Firebase.ConfiguracaoFirebase;
 import br.com.uol.pslibs.checkout_in_app.PSCheckout;
-import br.com.uol.pslibs.checkout_in_app.wallet.listener.MainCardCallback;
 import br.com.uol.pslibs.checkout_in_app.wallet.util.PSCheckoutConfig;
 import br.com.uol.pslibs.checkout_in_app.wallet.vo.PSWalletMainCardVO;
 
@@ -185,26 +181,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //////////////
-                if (PSCheckout.isLoggedUser()) {
-                    PSCheckout.getMainCard(new MainCardCallback() {
-                        @Override
-                        public void onSuccess(PSWalletMainCardVO mainCardVO) {
-                            if (mainCardVO != null) {
-                                textView.setText(mainCard.getCardBrand() + " **** " + mainCard.getFinalCard());
-                            } else {
-                                Toast.makeText(MainActivity.this, "Sem cartão principal no momento...",
-                                        Toast.LENGTH_LONG).show();
-                            }
-                        }
-
-                        @Override
-                        public void onFail() {
-
-                        }
-                    });
-                }else {
-                    Toast.makeText(MainActivity.this, "Usuario não está logado", Toast.LENGTH_LONG).show();
-                }
               //////////////
             }
         });
