@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "942545113227",
+    "firebase_url": "https://alllog-brazil.firebaseio.com",
+    "project_id": "alllog-brazil",
+    "storage_bucket": "alllog-brazil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942545113227:android:47e20002af961349",
+        "android_client_info": {
+          "package_name": "br.com.citdevelopers.alllog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942545113227-b8j7o0jhrpi6m114ct6leks0j1b3o0vm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.citdevelopers.alllog",
+            "certificate_hash": "bbaa513114f774fb942e7edf44ae2af2cf8043c9"
+          }
+        },
+        {
+          "client_id": "942545113227-73tioe6dsqq8if8nrdb5c92fff11r635.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpzJ3oiYtbnheCXJCAeD1Px8xDDCdsVaw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942545113227-73tioe6dsqq8if8nrdb5c92fff11r635.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

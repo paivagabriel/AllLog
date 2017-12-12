@@ -22,7 +22,7 @@ allprojects {
             url "https://jitpack.io"
         }
         maven {
-            url "https://github.com/pagseguro/android-checkout-transparent-in-app/raw/master/repositorio"
+            url "https://github.com/pagseguro/pagseguro-android-sdk-checkout-in-app/raw/master/repositorio"
         }
         jcenter()
         mavenCentral()
