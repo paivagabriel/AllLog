@@ -35,10 +35,9 @@ dependencies {
     compile 'com.android.support:support-v4:26.1.0'
     compile 'com.android.support:appcompat-v7:26.1.0'
 
-    compile 'com.google.firebase:firebase-auth:11.4.0'
-    compile 'com.google.firebase:firebase-database:11.4.0'
-    compile 'com.google.firebase:firebase-storage:11.4.0'
-    compile 'com.google.firebase:firebase-core:11.4.0'
+    compile 'com.google.firebase:firebase-auth:11.6.2'
+    compile 'com.google.firebase:firebase-database:11.6.2'
+    compile 'com.google.firebase:firebase-core:11.6.2'
 
     compile  'com.wang.avi:library:1.0.3'
 
