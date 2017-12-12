@@ -1,4 +1,4 @@
-package br.com.citdevelopers.alllog.model;
+package br.com.citdevelopers.alllog.Model;
 
 /**
  * Created by Thalles on 04/12/2017.
