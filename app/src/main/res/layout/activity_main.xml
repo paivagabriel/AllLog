@@ -7,7 +7,7 @@
     style="@android:style/Theme.NoTitleBar"
     tools:context="br.com.citdevelopers.alllog.Activity.MainActivity">
 
-<include layout="@layout/custom_toolbar"/>
+    <include layout="@layout/custom_toolbar" />
 
     <TextView
         android:id="@+id/helloworld"

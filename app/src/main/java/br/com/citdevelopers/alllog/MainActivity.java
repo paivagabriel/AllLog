@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
     private PSWalletMainCardVO mainCard;
 
 
-
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
 
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         mainCard = new PSWalletMainCardVO();
 
         firebaseDatabase = ConfiguracaoFirebase.getFirebaseDatabase()
-       .child("usuarios/clientes/pushid/creditos");
+                .child("usuarios/clientes/pushid/creditos");
 
         toolbar = findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         creditValue = findViewById(R.id.text_creditos_toolbar);
         textView = findViewById(R.id.helloworld);
 
-       // creditValue.setText("Teste");
+        // creditValue.setText("Teste");
 
         credit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 imgView += 10;
-                switch (imgView){
+                switch (imgView) {
                     case 10:
                         preco.setImageResource(R.drawable.compra10);
                         break;
@@ -128,11 +127,11 @@ public class MainActivity extends AppCompatActivity {
                         preco.setImageResource(R.drawable.compra50);
                         break;
                 }
-                if(imgView >= 50){
-                   // Toast.makeText(getApplicationContext(), "Erro, valor Fora da faixa! " + String.valueOf(imgView), Toast.LENGTH_SHORT).show();
+                if (imgView >= 50) {
+                    // Toast.makeText(getApplicationContext(), "Erro, valor Fora da faixa! " + String.valueOf(imgView), Toast.LENGTH_SHORT).show();
                     plus.setVisibility(View.GONE);
                     imgView = 50;
-                }else{
+                } else {
                     plus.setVisibility(View.VISIBLE);
                     minus.setVisibility(View.VISIBLE);
                 }
@@ -146,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 imgView -= 10;
-                switch (imgView){
+                switch (imgView) {
                     case 10:
                         preco.setImageResource(R.drawable.compra10);
                         break;
@@ -163,12 +162,12 @@ public class MainActivity extends AppCompatActivity {
                         preco.setImageResource(R.drawable.compra50);
                         break;
                 }
-                if(imgView <= 10){
-                  //  Toast.makeText(getApplicationContext(), "Erro, valor Fora da faixa! " + imgView, Toast.LENGTH_SHORT).show();
+                if (imgView <= 10) {
+                    //  Toast.makeText(getApplicationContext(), "Erro, valor Fora da faixa! " + imgView, Toast.LENGTH_SHORT).show();
                     minus.setVisibility(View.GONE);
                     plus.setVisibility(View.VISIBLE);
                     imgView = 10;
-                }else{
+                } else {
                     plus.setVisibility(View.VISIBLE);
 
                 }
@@ -181,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //////////////
-              //////////////
+                //////////////
             }
         });
         return dialog;

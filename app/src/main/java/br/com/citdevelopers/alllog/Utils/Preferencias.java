@@ -21,7 +21,7 @@ public class Preferencias {
     private final String CHAVE_VALIDADE_CARTAO = "validadeCartao";
 
 
-    public Preferencias(Context context){
+    public Preferencias(Context context) {
 
         contexto = context;
         preferences = contexto.getSharedPreferences(NOME_ARQUIVO, MODE);
@@ -31,15 +31,15 @@ public class Preferencias {
     }
 
 
-    public void SalvarDados(String idLoggedUser, String numercoCartao, String validadeCartao){
+    public void SalvarDados(String idLoggedUser, String numercoCartao, String validadeCartao) {
         editor.putString(CHAVE_IDENTIFICADOR, idLoggedUser);
         editor.putString(CHAVE_NUMERO_CARTAO, numercoCartao);
         editor.putString(CHAVE_VALIDADE_CARTAO, validadeCartao);
         editor.commit();
 
-        }
+    }
 
-    public String getIdentificador(){
+    public String getIdentificador() {
         return preferences.getString(CHAVE_IDENTIFICADOR, null);
     }
 

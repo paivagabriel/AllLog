@@ -1,18 +1,6 @@
 package br.com.citdevelopers.alllog.Utils;
 
 
-
-import android.content.Intent;
-import android.support.v7.app.AlertDialog;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.cooltechworks.creditcarddesign.CardEditActivity;
-
-import br.com.citdevelopers.alllog.R;
-
 /**
  * Created by Thalles on 05/12/2017.
  */
