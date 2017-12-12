@@ -1,20 +1,14 @@
 package br.com.citdevelopers.alllog.Model;
 
-import com.google.firebase.database.DatabaseReference;
-
-import br.com.citdevelopers.alllog.Firebase.ConfiguracaoFirebase;
-
 /**
  * Created by Thalles on 04/12/2017.
  */
 
-public class Veiculo  extends  Entregador{
+class Veiculo {
 
     private String TIPO[] = {"Bicicleta", "Moto", "Caminhonete", "Furgão", "Caminhão"};
     private String modelo, placa;
-    private String capCarga;
-    private String id;
-
+    private double capCarga;
 
     public Veiculo() {
 
@@ -44,20 +38,11 @@ public class Veiculo  extends  Entregador{
         this.placa = placa;
     }
 
-    public String getCapCarga() {
+    public double getCapCarga() {
         return capCarga;
     }
 
-    public void setCapCarga(String capCarga) {
+    public void setCapCarga(double capCarga) {
         this.capCarga = capCarga;
-    }
-
-
-
-
-
-    public void salvarDados() {
-        DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
-        databaseReference.child("usuarios/clientes/").child(getUid()).setValue(this);
     }
 }

@@ -12,19 +12,7 @@ import br.com.citdevelopers.alllog.Firebase.ConfiguracaoFirebase;
 
 public class Usuario {
 
-    private String nome;
-    private String email;
-    private String senha;
-    private String cartaoCred;
-    private String id;
-    private String uid;
-    private boolean cliente;
-
-
-
-
-    private String endereco;
-    private String telefone;
+    private String nome, email, senha, cartaoCred, id, uid;
     private double credito;
     private String cpfCnpj;
     private GpsStatus gpsStatus;
@@ -37,13 +25,7 @@ public class Usuario {
 
     }
 
-    public String getEndereco() {
-        return endereco;
-    }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
     public String getId() {
         return id;
     }
@@ -117,33 +99,14 @@ public class Usuario {
     }
 
 
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public boolean isCliente() {
-        return cliente;
-    }
-
-    public void setCliente(boolean cliente) {
-        this.cliente = cliente;
-    }
-
-
     public void salvarDados() {
         DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
-        databaseReference.child("usuarios/clientes/").child(getId()).setValue(this);
+        databaseReference.child("usuario/cliente").child(getId()).setValue(this);
     }
 
     public static DatabaseReference getConfiguracaoUsuario() {
         DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
-        return databaseReference.child("usuarios/clientes");
+        return databaseReference.child("usuario/cliente");
     }
-
-
 
 }
