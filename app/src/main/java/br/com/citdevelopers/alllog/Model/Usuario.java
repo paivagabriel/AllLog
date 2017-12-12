@@ -1,10 +1,12 @@
-package br.com.citdevelopers.alllog.Model;
+package br.com.citdevelopers.alllog.model;
 
 import android.location.GpsStatus;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.database.DatabaseReference;
 
-import br.com.citdevelopers.alllog.Firebase.ConfiguracaoFirebase;
+import br.com.citdevelopers.alllog.firebase.ConfiguracaoFirebase;
+
 
 /**
  * Created by Thalles on 04/12/2017.
@@ -12,11 +14,29 @@ import br.com.citdevelopers.alllog.Firebase.ConfiguracaoFirebase;
 
 public class Usuario {
 
-    private String nome, email, senha, cartaoCred, id, uid;
+    private String nome, email, senha, endereco, cartaoCred, id, uid;
     private double credito;
     private String cpfCnpj;
     private GpsStatus gpsStatus;
+    private LatLng latLng;
 
+    private DatabaseReference data = ConfiguracaoFirebase.getFirebaseDatabase().child("Users/clientes");
+
+    public LatLng getLatLng() {
+        return latLng;
+    }
+
+    public void setLatLng(LatLng latLng) {
+        this.latLng = latLng;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
 
     /**
      * @Javadoc *Construtor vazio, para implementar somente oque for necessário
@@ -100,13 +120,12 @@ public class Usuario {
 
 
     public void salvarDados() {
-        DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
-        databaseReference.child("usuario/cliente").child(getId()).setValue(this);
+        data.child(id).setValue(this);
     }
 
     public static DatabaseReference getConfiguracaoUsuario() {
-        DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
-        return databaseReference.child("usuario/cliente");
+        DatabaseReference data = ConfiguracaoFirebase.getFirebaseDatabase().child("Users/clientes");
+        return data;
     }
 
 }

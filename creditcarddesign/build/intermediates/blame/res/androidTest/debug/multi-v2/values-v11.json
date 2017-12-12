@@ -17,10 +17,10 @@
             ]
         },
         {
-            "outputFile": "C:\\workspace\\Android\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "D:\\Projetos_Desktop\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\1e1284c52a60de4552f8b7c20acd3fe9\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\Ivecio\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\68e435732699843de02109786aefea7b\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

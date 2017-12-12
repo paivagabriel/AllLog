@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\workspace\\Android\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "D:\\Projetos_Desktop\\AllLog\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\1e1284c52a60de4552f8b7c20acd3fe9\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Ivecio\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.1.aar\\28252c0c98367490c8d79011b5e28ab5\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Ivecio\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\68e435732699843de02109786aefea7b\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,21 +31,11 @@
                         "endColumns": "12",
                         "endOffsets": "289"
                     }
-                },
-                {
-                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.1.aar\\89ab69790807a328524698934cc74b74\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
                 }
             ]
         },
         {
-            "outputFile": "D:\\Projetos_Desktop\\AllLog\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "D:\\Projetos_Desktop\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ivecio\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.1.aar\\28252c0c98367490c8d79011b5e28ab5\\res\\values-v16\\values-v16.xml",

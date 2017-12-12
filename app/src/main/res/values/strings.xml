@@ -7,4 +7,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="validade_cartao">Validade do cartão</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Google Maps -->
+    <string name="google_maps_api_key">AIzaSyBtHBoPE3E9r974CJnK3M5ys0XecNnkhPc</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

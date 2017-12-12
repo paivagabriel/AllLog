@@ -1,4 +1,4 @@
-package br.com.citdevelopers.alllog.Firebase;
+package br.com.citdevelopers.alllog.firebase;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
