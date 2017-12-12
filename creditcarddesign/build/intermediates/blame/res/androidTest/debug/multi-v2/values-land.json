@@ -1,10 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "Z:\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "D:\\Projetos_Desktop\\AllLog\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\975b28594581b6475b866c25155143d9\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Ivecio\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\68e435732699843de02109786aefea7b\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\workspace\\Android\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-land\\values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\cd6cda46f8fbc9a4701f46fc26d280a4\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

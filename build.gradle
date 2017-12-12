@@ -11,7 +11,7 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
-        classpath 'com.google.gms:google-services:3.0.0'
+        classpath 'com.google.gms:google-services:3.1.1'
     }
 }
 
@@ -23,7 +23,7 @@ allprojects {
             url "https://jitpack.io"
         }
         maven {
-            url "https://github.com/pagseguro/android-checkout-transparent-in-app/raw/master/repositorio"
+            url "https://github.com/pagseguro/pagseguro-android-sdk-checkout-in-app/raw/master/repositorio"
         }
         jcenter()
         mavenCentral()

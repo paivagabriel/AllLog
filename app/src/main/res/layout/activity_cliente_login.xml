@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="@drawable/bg"
-    tools:context="br.com.citdevelopers.alllog.Activity.EntregadorLoginActivity">
+    tools:context="br.com.citdevelopers.alllog.activity.EntregadorLoginActivity">
 
     <Button
         android:id="@+id/bt_cliente_conectar"

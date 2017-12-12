@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#424242</color>
-    <color name="colorPrimaryDark">#212121</color>
-    <color name="colorAccent">#ffbd30</color>
+    <color name="colorPrimary">#757575</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="colorAccent">#bdbdbd</color>
     <color name="textColorPrimary">#000</color>
-    <color name="VerdeFluorescente">#D912FF00</color>
-    <color name="Amarelo">#D9FCD107</color>
-    <color name="PretoTransparente65">#A6000000</color>
-    <color name="PretoTransparente80">#CC000000</color>
-    <color name="cinzaClaro">#BDBDBD</color>
-    <color name="corFundoActivities">#E0E0E0</color>
-    <color name="verdeClaro">#B9F6CA</color>
-    <color name="amareloClaro">#FFF9C4</color>
+
+    <color name="bt_blue">#5C9AD3</color>
+    <color name="bt_border">#598AB6</color>
+    <color name="light_grey">#BFBFBF</color>
+    <color name="dark_grey">#808080</color>
+
+    <color name="yellow_start">#F8CD4B</color>
+    <color name="yellow_middle">#FFC300</color>
+    <color name="yellow_end">#E1B50C</color>
 </resources>
