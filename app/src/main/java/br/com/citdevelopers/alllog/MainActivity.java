@@ -17,7 +17,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
-import br.com.citdevelopers.alllog.Firebase.ConfiguracaoFirebase;
+import br.com.citdevelopers.alllog.firebase.ConfiguracaoFirebase;
 import br.com.uol.pslibs.checkout_in_app.PSCheckout;
 import br.com.uol.pslibs.checkout_in_app.wallet.util.PSCheckoutConfig;
 import br.com.uol.pslibs.checkout_in_app.wallet.vo.PSWalletMainCardVO;

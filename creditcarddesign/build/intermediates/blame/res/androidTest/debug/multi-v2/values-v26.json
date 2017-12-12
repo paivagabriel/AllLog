@@ -4,7 +4,7 @@
             "outputFile": "C:\\workspace\\Android\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\2aa6d697b4027f91c3e9738a895c6060\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\cd6cda46f8fbc9a4701f46fc26d280a4\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

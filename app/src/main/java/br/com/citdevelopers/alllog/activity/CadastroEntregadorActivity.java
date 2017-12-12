@@ -1,13 +1,10 @@
-package br.com.citdevelopers.alllog.Activity;
+package br.com.citdevelopers.alllog.activity;
 
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
@@ -18,15 +15,12 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
 
-import br.com.citdevelopers.alllog.Firebase.ConfiguracaoFirebase;
-import br.com.citdevelopers.alllog.Model.Entregador;
-import br.com.citdevelopers.alllog.Model.Usuario;
-import br.com.citdevelopers.alllog.Model.Veiculo;
 import br.com.citdevelopers.alllog.R;
-import br.com.citdevelopers.alllog.Util.BaseActivity;
+import br.com.citdevelopers.alllog.firebase.ConfiguracaoFirebase;
+import br.com.citdevelopers.alllog.model.Entregador;
+import br.com.citdevelopers.alllog.model.Veiculo;
+import br.com.citdevelopers.alllog.util.BaseActivity;
 
 public class CadastroEntregadorActivity extends BaseActivity {
     private EditText editNomeEntregadorCompleto, editEntregadorEmail, editEntregadorTelefone, editEntregadorCpf, editEntregadorEndereco, editEntregadorCarga, editEntregadorPlacaVeiculo, editEntregadorModeloVeiculo, editEntregadorSenha;

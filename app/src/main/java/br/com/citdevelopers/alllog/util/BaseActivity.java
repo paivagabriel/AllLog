@@ -126,8 +126,8 @@ public class BaseActivity extends AppCompatActivity {
         builder.setCancelable(true);
         builder.setView(view);
         final AlertDialog dialog = builder.create();
-        TextView textoExibido = (TextView) view.findViewById(R.id.texto_ok);
-        Button btOK = (Button) view.findViewById(R.id.bt_ok);
+        TextView textoExibido = view.findViewById(R.id.texto_ok);
+        Button btOK = view.findViewById(R.id.bt_ok);
         textoExibido.setText(texto);
         btOK.setOnClickListener(new View.OnClickListener() {
             @Override

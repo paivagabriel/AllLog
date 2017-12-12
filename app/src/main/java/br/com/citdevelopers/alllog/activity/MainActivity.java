@@ -1,4 +1,4 @@
-package br.com.citdevelopers.alllog.Activity;
+package br.com.citdevelopers.alllog.activity;
 
 import android.content.Intent;
 import android.os.Bundle;

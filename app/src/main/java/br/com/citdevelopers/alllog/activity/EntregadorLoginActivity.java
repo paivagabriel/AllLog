@@ -1,4 +1,4 @@
-package br.com.citdevelopers.alllog.Activity;
+package br.com.citdevelopers.alllog.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,10 +14,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import br.com.citdevelopers.alllog.Firebase.ConfiguracaoFirebase;
-import br.com.citdevelopers.alllog.Model.Entregador;
 import br.com.citdevelopers.alllog.R;
-import br.com.citdevelopers.alllog.Util.BaseActivity;
+import br.com.citdevelopers.alllog.firebase.ConfiguracaoFirebase;
+import br.com.citdevelopers.alllog.model.Entregador;
+import br.com.citdevelopers.alllog.util.BaseActivity;
 
 public class EntregadorLoginActivity extends BaseActivity {
 

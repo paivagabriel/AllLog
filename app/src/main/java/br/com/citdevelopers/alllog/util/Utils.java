@@ -1,4 +1,4 @@
-package br.com.citdevelopers.alllog.Utils;
+package br.com.citdevelopers.alllog.util;
 
 
 /**

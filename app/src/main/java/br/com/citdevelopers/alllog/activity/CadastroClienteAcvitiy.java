@@ -1,8 +1,7 @@
-package br.com.citdevelopers.alllog.Activity;
+package br.com.citdevelopers.alllog.activity;
 
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,13 +17,11 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
-
-import br.com.citdevelopers.alllog.Firebase.ConfiguracaoFirebase;
-import br.com.citdevelopers.alllog.Model.Usuario;
 import br.com.citdevelopers.alllog.R;
-import br.com.citdevelopers.alllog.Util.BaseActivity;
+import br.com.citdevelopers.alllog.firebase.ConfiguracaoFirebase;
+import br.com.citdevelopers.alllog.model.Usuario;
+import br.com.citdevelopers.alllog.util.BaseActivity;
 
 
 public class CadastroClienteAcvitiy extends BaseActivity {

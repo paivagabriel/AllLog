@@ -1,10 +1,10 @@
-package br.com.citdevelopers.alllog.Model;
+package br.com.citdevelopers.alllog.model;
 
 /**
  * Created by Thalles on 04/12/2017.
  */
 
-class Veiculo {
+public class Veiculo {
 
     private String TIPO[] = {"Bicicleta", "Moto", "Caminhonete", "Furgão", "Caminhão"};
     private String modelo, placa;

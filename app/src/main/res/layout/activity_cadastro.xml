@@ -31,7 +31,7 @@
             android:layout_height="match_parent"
             android:text="Cliente"
             android:layout_weight="1"
-            android:gravity="center"/>
+            android:gravity="center" />
 
         <RadioButton
             android:id="@+id/rb_entregador"
@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:text="Entregador"
             android:layout_weight="1"
-            android:gravity="center"/>
+            android:gravity="center" />
 
 
     </RadioGroup>

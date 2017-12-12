@@ -1,10 +1,10 @@
-package br.com.citdevelopers.alllog.Model;
+package br.com.citdevelopers.alllog.model;
 
 import android.location.GpsStatus;
 
 import com.google.firebase.database.DatabaseReference;
 
-import br.com.citdevelopers.alllog.Firebase.ConfiguracaoFirebase;
+import br.com.citdevelopers.alllog.firebase.ConfiguracaoFirebase;
 
 /**
  * Created by Thalles on 04/12/2017.

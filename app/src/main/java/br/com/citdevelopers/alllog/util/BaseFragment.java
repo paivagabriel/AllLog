@@ -16,7 +16,7 @@ import br.com.citdevelopers.alllog.R;
 
 public class BaseFragment extends Fragment {
 
-    public double convertStringToDouble(String s){
+    public double convertStringToDouble(String s) {
         NumberFormat format = NumberFormat.getInstance(Locale.FRANCE);
         double d = 0;
         try {
@@ -29,7 +29,7 @@ public class BaseFragment extends Fragment {
         return d;
     }
 
-    public String convertDoubleToString(double d){
+    public String convertDoubleToString(double d) {
         return String.format(Locale.FRANCE, "%.2f", d);
     }
 
@@ -53,8 +53,8 @@ public class BaseFragment extends Fragment {
         }
     }
 
-    public void snack( String msg){
-        Snackbar.make (getActivity().findViewById(android.R.id.content), msg,
+    public void snack(String msg) {
+        Snackbar.make(getActivity().findViewById(android.R.id.content), msg,
                 Snackbar.LENGTH_LONG)
                 .setActionTextColor(ContextCompat.getColor(getActivity(), R.color.colorPrimary))
                 .setAction("OK", new View.OnClickListener() {
@@ -66,7 +66,7 @@ public class BaseFragment extends Fragment {
                 ).show();
     }
 
-    public String convertSpecialCharacters(String s){
+    public String convertSpecialCharacters(String s) {
         return s.replaceAll("[ãâáàä]", "a")
                 .replaceAll("[êéèë]", "e")
                 .replaceAll("[îíìï]", "i")
@@ -87,8 +87,7 @@ public class BaseFragment extends Fragment {
         return Normalizer.normalize(s, Normalizer.Form.NFC).replaceAll("[^\\p{ASCII}]", "");
     }
 
-    public static Bitmap convertViewToBitmap(View view)
-    {
+    public static Bitmap convertViewToBitmap(View view) {
         view.measure(
                 View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED),
                 View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
