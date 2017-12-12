@@ -2,9 +2,7 @@ package br.com.citdevelopers.alllog;
 
 import android.app.Dialog;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cooltechworks.creditcarddesign.CardEditActivity;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,13 +31,10 @@ public class MainActivity extends AppCompatActivity {
     private ValueEventListener valueEventListener;
 
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        FirebaseApp.initializeApp(getApplication());
 
         firebaseDatabase = ConfiguracaoFirebase.getFirebaseDatabase()
                 .child("usuarios/clientes/pushid/creditos");
