@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_busca_entregador"
+            android:icon="@drawable/abelha_abelha_cliente"
+            android:title="Buscar Entregador" />
+        <item
+            android:id="@+id/nav_entregador"
+            android:icon="@drawable/abelha_logo"
+            android:title="Entregador" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/play"
+            android:title="Videos" />
+        <item
+            android:id="@+id/nav_duvidas"
+            android:icon="@drawable/interrogacao"
+            android:title="Dúvidas" />
+        <item
+            android:id="@+id/nav_legal"
+            android:icon="@drawable/legal"
+            android:title="Legal" />
+        <item
+            android:id="@+id/nav_cadastrar"
+            android:icon="@drawable/cadastrar"
+            android:title="Cadastrar" />
+    </group>
+</menu>
