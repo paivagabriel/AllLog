@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_recuperar_senha_entregador"
+        android:layout_alignStart="@+id/edit_recuperar_senha_entregador"
+        android:layout_marginBottom="40dp"
+        android:text="Qual é o seu e-mail?" />
+
+    <EditText
+        android:id="@+id/edit_recuperar_senha_entregador"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/borda_edit_text"
+        android:imeOptions="actionNext"
+
+        android:inputType="textEmailAddress|textAutoComplete"
+        android:padding="6dp"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/cancelarDialog"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_confirmar"
+        android:layout_alignBottom="@+id/bt_confirmar"
+        android:layout_alignEnd="@+id/edit_recuperar_senha_entregador"
+        android:background="@drawable/borda_botao"
+        android:padding="8dp"
+        android:text="Cancelar"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/bt_confirmar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edit_recuperar_senha_entregador"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/borda_botao"
+        android:padding="8dp"
+        android:text="Confirmar"
+        android:textAllCaps="false" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edit_recuperar_senha_entregador"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:alpha="0.5" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Redefinição de senha"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView22"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/abelha_verde" />
+</RelativeLayout>
