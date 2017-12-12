@@ -14,7 +14,33 @@ import br.com.citdevelopers.alllog.firebase.ConfiguracaoFirebase;
 
 public class Usuario {
 
-    private String nome, email, senha, endereco, cartaoCred, id, uid;
+    private String nome;
+    private String email;
+    private String senha;
+    private String endereco;
+    private String cartaoCred;
+    private String id;
+    private String uid;
+    private boolean cliente;
+
+    public DatabaseReference getData() {
+        return data;
+    }
+
+    public void setData(DatabaseReference data) {
+        this.data = data;
+    }
+
+    public String getTelefone() {
+
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    private String telefone;
     private double credito;
     private String cpfCnpj;
     private GpsStatus gpsStatus;
@@ -128,4 +154,7 @@ public class Usuario {
         return data;
     }
 
+    public void setCliente(boolean cliente) {
+        this.cliente = cliente;
+    }
 }

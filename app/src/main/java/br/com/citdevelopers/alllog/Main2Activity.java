@@ -35,6 +35,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 
 import br.com.citdevelopers.alllog.util.Permissao;
 
+
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         GoogleApiClient.ConnectionCallbacks,

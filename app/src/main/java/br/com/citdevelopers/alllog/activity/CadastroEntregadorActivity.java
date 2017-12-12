@@ -76,7 +76,7 @@ public class CadastroEntregadorActivity extends BaseActivity {
                 entregador.setSenha(editEntregadorSenha.getText().toString());
 
 
-                if (veiculo.getCapCarga().isEmpty() || entregador.getCpfCnpj().isEmpty() || entregador.getEmail().isEmpty()
+                if (String.valueOf(veiculo.getCapCarga()).isEmpty() || entregador.getCpfCnpj().isEmpty() || entregador.getEmail().isEmpty()
                         || entregador.getEndereco().isEmpty() || entregador.getNome().isEmpty() || entregador.getTelefone().isEmpty()
                         || veiculo.getPlaca().isEmpty() || veiculo.getModelo().isEmpty() || entregador.getSenha().isEmpty()) {
                     snack("Preencha os campos ...");

@@ -9,4 +9,7 @@
     <string name="validade_cartao">Validade do cartão</string>
     <string name="comprar_cr">Comprar Créditos</string>
     <string name="comprar">Comprar</string>
+    <string name="title_activity_main2">Main2</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
 </resources>

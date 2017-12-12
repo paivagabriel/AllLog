@@ -8,7 +8,7 @@ public class Veiculo {
 
     private String TIPO[] = {"Bicicleta", "Moto", "Caminhonete", "Furgão", "Caminhão"};
     private String modelo, placa;
-    private double capCarga;
+    private String capCarga;
 
     public Veiculo() {
 
@@ -38,11 +38,11 @@ public class Veiculo {
         this.placa = placa;
     }
 
-    public double getCapCarga() {
+    public String getCapCarga() {
         return capCarga;
     }
 
-    public void setCapCarga(double capCarga) {
+    public void setCapCarga(String capCarga) {
         this.capCarga = capCarga;
     }
 }

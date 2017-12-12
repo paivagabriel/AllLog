@@ -8,6 +8,7 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseReference firebaseDatabase;
     private ValueEventListener valueEventListener;
     private PSWalletMainCardVO mainCard;
-
+    private Button btGmaps;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -48,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
+        btGmaps = findViewById(R.id.bt_maps);
+
+        btGmaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
+                startActivity(intent);
+            }
+        });
 
         credit = findViewById(R.id.creditos_toolbar);
         creditValue = findViewById(R.id.text_creditos_toolbar);
@@ -199,6 +209,5 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         firebaseDatabase.addValueEventListener(valueEventListener);
     }
-
 
 }
