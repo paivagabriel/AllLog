@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AllLog.iml" filepath="$PROJECT_DIR$/AllLog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alllog.iml" filepath="$PROJECT_DIR$/alllog.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/creditcarddesign/creditcarddesign.iml" filepath="$PROJECT_DIR$/creditcarddesign/creditcarddesign.iml" />
     </modules>

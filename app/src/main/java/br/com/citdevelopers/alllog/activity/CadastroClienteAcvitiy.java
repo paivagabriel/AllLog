@@ -1,5 +1,6 @@
 package br.com.citdevelopers.alllog.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.View;
@@ -18,10 +19,12 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.database.DatabaseReference;
 
+import br.com.citdevelopers.alllog.CreditosAcvitity;
 import br.com.citdevelopers.alllog.R;
 import br.com.citdevelopers.alllog.firebase.ConfiguracaoFirebase;
 import br.com.citdevelopers.alllog.model.Usuario;
 import br.com.citdevelopers.alllog.util.BaseActivity;
+import dmax.dialog.SpotsDialog;
 
 
 public class CadastroClienteAcvitiy extends BaseActivity {
@@ -36,7 +39,8 @@ public class CadastroClienteAcvitiy extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_cliente_acvitiy);
+        setContentView(R.layout.activity_cadastro_cliente_actvity);
+        final android.app.AlertDialog waitingDialog = new SpotsDialog(CadastroClienteAcvitiy.this);
 
 
 
@@ -74,7 +78,7 @@ public class CadastroClienteAcvitiy extends BaseActivity {
                 user.setTelefone(editClienteTelefone.getText().toString());
                 user.setCpfCnpj(editClienteCpf.getText().toString());
                 user.setEndereco(editClienteEndereco.getText().toString());
-                user.setCliente(true);
+
 
 
                 if (user.getNome().isEmpty() || user.getEmail().isEmpty() ||
@@ -82,7 +86,7 @@ public class CadastroClienteAcvitiy extends BaseActivity {
                         user.getCpfCnpj().isEmpty() || user.getEndereco().isEmpty()) {
                     snack("Preencha os campos ...");
                 } else {
-                    showProgressDialog();
+                    waitingDialog.show();
                     cadastrarCliente();
                 }
 
@@ -101,7 +105,8 @@ public class CadastroClienteAcvitiy extends BaseActivity {
                             Toast.makeText(CadastroClienteAcvitiy.this, "Conta criada com sucesso", Toast.LENGTH_SHORT).show();
                             user.setId(task.getResult().getUser().getUid());
                             user.salvarDados();
-                            hideProgressDialog();
+                            waitingDialog.dismiss();
+                            startActivity(new Intent(CadastroClienteAcvitiy.this, CreditosAcvitity.class));
                         } else {
                             String erro = null;
                             hideProgressDialog();

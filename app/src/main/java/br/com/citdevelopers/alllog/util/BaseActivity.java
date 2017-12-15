@@ -26,6 +26,9 @@ public class BaseActivity extends AppCompatActivity {
 
     public CustomProgressDialog progressDialog;
 
+
+
+
     public void showProgressDialog() {
         if (progressDialog == null) {
             progressDialog = new CustomProgressDialog(this, 2);

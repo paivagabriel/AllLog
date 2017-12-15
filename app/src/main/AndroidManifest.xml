@@ -14,13 +14,14 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name="com.cooltechworks.creditcarddesign.CardEditActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,11 +34,21 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
+            android:name=".MapsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CadastroActivity"
-            android:parentActivityName=".Main2Activity"></activity>
+        <activity
+            android:name=".CadastroActivity"
+            android:parentActivityName=".MapsActivity" />
+        <activity
+            android:name=".activity.CadastroClienteAcvitiy"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.CadastroEntregadorActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.ClienteLoginActivity" />
+        <activity android:name=".activity.EntregadorLoginActivity" />
+        <activity android:name=".CreditosAcvitity" />
+        <activity android:name=".activity.SplashScreen"></activity>
     </application>
 
 </manifest>

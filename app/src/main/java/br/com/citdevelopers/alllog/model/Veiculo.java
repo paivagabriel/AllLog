@@ -4,7 +4,7 @@ package br.com.citdevelopers.alllog.model;
  * Created by Thalles on 04/12/2017.
  */
 
-public class Veiculo {
+public class Veiculo  extends  Usuario{
 
     private String TIPO[] = {"Bicicleta", "Moto", "Caminhonete", "Furgão", "Caminhão"};
     private String modelo, placa;

@@ -2,11 +2,9 @@ package br.com.citdevelopers.alllog.model;
 
 import android.location.GpsStatus;
 
-import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.database.DatabaseReference;
 
 import br.com.citdevelopers.alllog.firebase.ConfiguracaoFirebase;
-
 
 /**
  * Created by Thalles on 04/12/2017.
@@ -17,43 +15,26 @@ public class Usuario {
     private String nome;
     private String email;
     private String senha;
-    private String endereco;
     private String cartaoCred;
     private String id;
     private String uid;
-    private boolean cliente;
 
-    public DatabaseReference getData() {
-        return data;
-    }
 
-    public void setData(DatabaseReference data) {
-        this.data = data;
-    }
 
-    public String getTelefone() {
 
-        return telefone;
-    }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
+    private String endereco;
     private String telefone;
     private double credito;
     private String cpfCnpj;
     private GpsStatus gpsStatus;
-    private LatLng latLng;
 
-    private DatabaseReference data = ConfiguracaoFirebase.getFirebaseDatabase().child("Users/clientes");
 
-    public LatLng getLatLng() {
-        return latLng;
-    }
+    /**
+     * @Javadoc *Construtor vazio, para implementar somente oque for necessário
+     */
+    public Usuario() {
 
-    public void setLatLng(LatLng latLng) {
-        this.latLng = latLng;
     }
 
     public String getEndereco() {
@@ -63,15 +44,6 @@ public class Usuario {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-
-    /**
-     * @Javadoc *Construtor vazio, para implementar somente oque for necessário
-     */
-    public Usuario() {
-
-    }
-
-
     public String getId() {
         return id;
     }
@@ -145,16 +117,27 @@ public class Usuario {
     }
 
 
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+
+
+
     public void salvarDados() {
-        data.child(id).setValue(this);
+        DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
+        databaseReference.child("usuarios/clientes/").child(getId()).setValue(this);
     }
 
     public static DatabaseReference getConfiguracaoUsuario() {
-        DatabaseReference data = ConfiguracaoFirebase.getFirebaseDatabase().child("Users/clientes");
-        return data;
+        DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
+        return databaseReference.child("usuarios/clientes");
     }
 
-    public void setCliente(boolean cliente) {
-        this.cliente = cliente;
-    }
+
+
 }

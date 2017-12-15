@@ -18,8 +18,6 @@ public class Entregador extends Usuario {
     private int categoria;
     private Veiculo veiculo;
 
-    private DatabaseReference data = ConfiguracaoFirebase.getFirebaseDatabase().child("Users/entregadores");
-
     /**
      * @Javadoc *Construtor vazio, para implementar somente oque for necessário
      */
@@ -30,13 +28,7 @@ public class Entregador extends Usuario {
     // metodos especificos
 
 
-    public Veiculo getVeiculo() {
-        return veiculo;
-    }
 
-    public void setVeiculo(Veiculo veiculo) {
-        this.veiculo = veiculo;
-    }
 //////////////////////////////////////////////
 
     @Override
@@ -131,11 +123,12 @@ public class Entregador extends Usuario {
 
     @Override
     public void salvarDados() {
-        data.child(getId()).setValue(this);
+        DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
+        databaseReference.child("usuarios/entregador").child(getId()).setValue(this);
     }
 
-    public static DatabaseReference getConfiguracaoUsuario() {
-        DatabaseReference data = ConfiguracaoFirebase.getFirebaseDatabase().child("Users/entregadores");
-        return data;
+    public static DatabaseReference getConfiguracaoEntregador() {
+        DatabaseReference databaseReference = ConfiguracaoFirebase.getFirebaseDatabase();
+        return databaseReference.child("usuarios/entregador");
     }
 }

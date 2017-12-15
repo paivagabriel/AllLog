@@ -14,10 +14,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import br.com.citdevelopers.alllog.CreditosAcvitity;
 import br.com.citdevelopers.alllog.R;
 import br.com.citdevelopers.alllog.firebase.ConfiguracaoFirebase;
 import br.com.citdevelopers.alllog.model.Entregador;
 import br.com.citdevelopers.alllog.util.BaseActivity;
+import dmax.dialog.SpotsDialog;
 
 public class EntregadorLoginActivity extends BaseActivity {
 
@@ -41,6 +43,11 @@ public class EntregadorLoginActivity extends BaseActivity {
         edit_senha_login_entregador = findViewById(R.id.edit_login_senha_entregador);
         tv_nova_conta = findViewById(R.id.tv_nova_conta_entregador);
         tv_redef_senha_entregador = findViewById(R.id.tv_redef_senha);
+
+
+        final android.app.AlertDialog waitingDialog = new SpotsDialog(EntregadorLoginActivity.this);
+
+
 
 
         tv_redef_senha_entregador.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +84,7 @@ public class EntregadorLoginActivity extends BaseActivity {
                 } else if (entregador.getSenha().length() == 0) {
                     snack("Digite sua senha.");
                 } else {
-                    showProgressDialog();
+                    waitingDialog.show();
                     autenticacao.signInWithEmailAndPassword(
                             entregador.getEmail(),
                             entregador.getSenha()
@@ -86,9 +93,10 @@ public class EntregadorLoginActivity extends BaseActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 snack("Login com sucesso");
-                                hideProgressDialog();
+                                startActivity(new Intent(EntregadorLoginActivity.this, CreditosAcvitity.class));
+                                waitingDialog.dismiss();
                             } else {
-                                hideProgressDialog();
+                                waitingDialog.dismiss();
                                 snack("Erro ao fazer login , verifique e-mail e senha , e tente novamente");
                             }
 
@@ -110,11 +118,11 @@ public class EntregadorLoginActivity extends BaseActivity {
 
         builder.setView(view);
         final android.app.AlertDialog dialog = builder.create();
-        final EditText RecuperarSenhaEdit = view.findViewById(R.id.edit_recuperar_senha_entregador);
+        final EditText RecuperarSenhaEdit = view.findViewById(R.id.edit_recuperar_senha);
 
         dialog.getWindow().setBackgroundDrawable(getResources().getDrawable(R.drawable.borda_dialog));
-
-                           dialog.show();
+        final android.app.AlertDialog waitingDialog = new SpotsDialog(EntregadorLoginActivity.this);
+        dialog.show();
 
                     cancelar.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -126,19 +134,20 @@ public class EntregadorLoginActivity extends BaseActivity {
                     confirmar.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            showProgressDialog();
+                            waitingDialog.show();
                             if (RecuperarSenhaEdit.getText().toString().isEmpty()) {
                                 snack("Digite seu e-mail");
+                                waitingDialog.dismiss();
 
                             } else {
                                 FirebaseAuth.getInstance().sendPasswordResetEmail(RecuperarSenhaEdit.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
-                                        hideProgressDialog();
+                                        waitingDialog.dismiss();
                                         snack("Em breve você recebera um link de redefinição de senha no e-mail informado .");
                                     }
                                 });
-                                dialog.dismiss();
+
 
                 }
             }

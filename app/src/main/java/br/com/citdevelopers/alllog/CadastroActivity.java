@@ -72,7 +72,7 @@ public class CadastroActivity extends BaseActivity implements GoogleApiClient.On
 
                             Usuario usuario = new Usuario();
                             usuario.setEndereco(address);
-                            usuario.setLatLng(latLng);
+
                             usuario.setNome(editNome.getText().toString());
                             usuario.setId(Usuario.getConfiguracaoUsuario().push().getKey());
                             usuario.salvarDados();
@@ -84,7 +84,7 @@ public class CadastroActivity extends BaseActivity implements GoogleApiClient.On
 
                             Entregador entregador = new Entregador();
                             entregador.setEndereco(address);
-                            entregador.setLatLng(latLng);
+
                             entregador.setNome(editNome.getText().toString());
                             entregador.setId(Entregador.getConfiguracaoUsuario().push().getKey());
                             entregador.salvarDados();

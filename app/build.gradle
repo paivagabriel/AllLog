@@ -44,7 +44,8 @@ dependencies {
     compile 'org.adw.library:discrete-seekbar:1.0.1'
     testCompile 'junit:junit:4.12'
     compile 'com.jakewharton:butterknife:8.5.1'
-
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.github.d-max:spots-dialog:0.7@aar'
     compile 'com.wang.avi:library:1.0.3'
     compile 'com.github.rtoshiro.mflibrary:mflibrary:1.0.0'
     compile 'com.google.android.gms:play-services-maps:11.6.2'

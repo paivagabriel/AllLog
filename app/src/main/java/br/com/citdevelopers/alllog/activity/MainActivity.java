@@ -27,12 +27,7 @@ public class MainActivity extends AppCompatActivity {
         credit = findViewById(R.id.creditos_toolbar);
         creditText = findViewById(R.id.text_creditos_toolbar);
 
-        credit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // dialog Compra Credito
-            }
-        });
+
 
         btn_inicio_entregador = findViewById(R.id.btn_inicio_entregador);
         btn_inicio_entregador.setOnClickListener(new View.OnClickListener() {
