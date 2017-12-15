@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\workspace\\Android\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\Gabriel\\Desktop\\Nova pasta\\alllog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\cd6cda46f8fbc9a4701f46fc26d280a4\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\f3e0a535ead8db00d88a390d81b4b7af\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,47 +23,13 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jess\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.1.aar\\01d7550c75e1959fcc0abd6ddc08cb04\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.1.aar\\671a33a28557e095bd07c8c9c01b9899\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endColumns": "65",
                         "endOffsets": "116"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "D:\\Projetos_Desktop\\AllLog\\AllLog\\creditcarddesign\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Ivecio\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.1.aar\\28252c0c98367490c8d79011b5e28ab5\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Ivecio\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\68e435732699843de02109786aefea7b\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
                     }
                 }
             ]
