@@ -4,6 +4,13 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/perfil"
+            android:icon="@drawable/profile_icon"
+            android:title="Meu perfil" />
+
+
         <item
             android:id="@+id/nav_busca_entregador"
             android:icon="@drawable/abelha_abelha_cliente"
@@ -14,7 +21,7 @@
             android:title="Entregador" />
         <item
             android:id="@+id/nav_videos"
-            android:icon="@drawable/play"
+            android:icon="@drawable/movie_button"
             android:title="Videos" />
         <item
             android:id="@+id/nav_duvidas"
@@ -26,7 +33,7 @@
             android:title="Legal" />
         <item
             android:id="@+id/nav_cadastrar"
-            android:icon="@drawable/cadastrar"
+            android:icon="@drawable/ic_action_location"
             android:title="Cadastrar" />
     </group>
 </menu>

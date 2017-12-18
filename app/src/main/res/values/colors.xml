@@ -5,6 +5,8 @@
     <color name="colorAccent">#bdbdbd</color>
     <color name="textColorPrimary">#000</color>
 
+    <color name="pretoTransparente">#99000000</color>
+
     <color name="bt_blue">#5C9AD3</color>
     <color name="bt_border">#598AB6</color>
     <color name="light_grey">#BFBFBF</color>
@@ -13,4 +15,10 @@
     <color name="yellow_start">#F8CD4B</color>
     <color name="yellow_middle">#FFC300</color>
     <color name="yellow_end">#E1B50C</color>
+
+    <color name="redColor">#F44336</color>
+    
+    <color name="graylight">#fafafa</color>
+    <color name="startBlue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
 </resources>

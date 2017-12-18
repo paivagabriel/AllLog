@@ -11,6 +11,7 @@ import android.widget.Toolbar;
 
 import br.com.citdevelopers.alllog.R;
 
+
 public class MainActivity extends AppCompatActivity {
     private Button btn_inicio_entregador;
     private Button btn_inicio_cliente;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_inicio);
 
         toolbar = findViewById(R.id.toolbar_main);

@@ -39,6 +39,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import br.com.citdevelopers.alllog.activity.PerfilActivity;
 import br.com.citdevelopers.alllog.model.Usuario;
 import br.com.citdevelopers.alllog.util.Permissao;
 
@@ -130,6 +131,8 @@ public class MapsActivity extends AppCompatActivity
         if (id == R.id.nav_busca_entregador) {
             // Handle the camera action
         } else if (id == R.id.nav_entregador) {
+        } else if (id == R.id.perfil) {
+            startActivity(new Intent(MapsActivity.this, PerfilActivity.class));
 
         } else if (id == R.id.nav_videos) {
 

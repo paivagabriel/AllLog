@@ -28,6 +28,7 @@ import br.com.citdevelopers.alllog.model.Veiculo;
 import br.com.citdevelopers.alllog.util.BaseActivity;
 import dmax.dialog.SpotsDialog;
 
+
 public class CadastroEntregadorActivity extends BaseActivity {
     private MaterialEditText editNomeEntregadorCompleto, editEntregadorEmail, editEntregadorTelefone, editEntregadorCpf, editEntregadorEndereco, editEntregadorCarga, editEntregadorPlacaVeiculo, editEntregadorModeloVeiculo, editEntregadorSenha;
     private Button btn_cadastrar_entregador;
@@ -43,7 +44,10 @@ public class CadastroEntregadorActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_cadastro_entregador);
+
+
 
         final android.app.AlertDialog waitingDialog = new SpotsDialog(CadastroEntregadorActivity.this);
 
